@@ -12,3 +12,6 @@
 */
 
 Route::get('/', ['uses'=>'ProductController@getIndex']);
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
